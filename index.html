@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>정서희 鄭瑞喜 · 전통연희 실연자 · 예술교육가</title>
+<meta name="description" content="정서희 鄭瑞喜 · 전통연희 실연자 · 예술교육가">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #f9f8f5;
+    --paper: #f9f8f5;
+    --ink: #161616;
+    --muted: #555;
+    --line: #161616;
+    --ph: #c9c8c3;
+    --ph-ink: #8a8984;
+    --gap: 10px;
+    --section-gap: clamp(180px, 20vw, 280px);
+    --pad: clamp(10px, 1.4vw, 16px);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Archivo", "Pretendard", system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    word-break: keep-all;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- masthead ---------- */
+  .masthead { text-align: center; padding: clamp(40px, 7vw, 90px) 16px 0; }
+  .masthead h1 { font-size: clamp(54px, 13.5vw, 190px); }
+  .masthead .kr-name { font-family: "Pretendard"; font-size: clamp(18px, 2.4vw, 28px); font-weight: 700; letter-spacing: .02em; margin-top: 14px; }
+  .masthead .label { margin-top: 6px; color: var(--muted); }
+
+  main { max-width: 1180px; margin: 0 auto; padding: 28px 16px 60px; display: grid; gap: var(--section-gap); }
+
+  /* ---------- panel ---------- */
+  .panel {
+    position: relative;
+    background: var(--paper);
+    padding: var(--pad);
+  }
+  .panel + .panel::before {  /* thin divider centered in the gap */
+    content: ""; position: absolute; left: 0; right: 0;
+    top: calc(var(--section-gap) / -2); height: 1px; background: var(--line); opacity: .35;
+  }
+
+  .ph {                      /* photo placeholder */
+    background: var(--ph);
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ph-ink); font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    overflow: hidden;
+  }
+  .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+  .mega {
+    font-weight: 700;
+    letter-spacing: -.035em;
+    line-height: .86;
+    text-transform: uppercase;
+  }
+  .label { font-size: 11px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; }
+  .small { font-size: 12px; line-height: 1.5; }
+  .kr { font-family: "Pretendard", sans-serif; }
+
+  /* ---------- 1. profile ---------- */
+  .profile-photos {
+    display: grid; grid-template-columns: 1fr 2.15fr 1fr; gap: var(--gap);
+    height: clamp(200px, 30vw, 330px);
+  }
+  .profile-mid {
+    display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px;
+    padding: 14px 0 0;
+  }
+  .profile-mid .contact { grid-column: 2; text-align: center; }
+  .profile-mid .social { justify-self: end; }
+  .contact { font-size: 12px; font-weight: 500; text-transform: uppercase; line-height: 1.35; }
+  .contact .as-is { text-transform: none; }
+  .social { display: flex; gap: 12px; align-items: flex-start; }
+  .social a { width: 26px; height: 26px; display: grid; place-items: center; }
+  .social svg { width: 24px; height: 24px; }
+  .profile-title { font-size: clamp(64px, 11vw, 150px); margin-top: clamp(28px, 6vw, 70px); }
+  .profile-foot {
+    display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .profile-body {
+    display: grid; grid-template-columns: auto 1fr; gap: clamp(28px, 4vw, 56px); align-items: end;
+    margin-top: clamp(28px, 6vw, 70px);
+  }
+  .profile-body .profile-title { margin-top: 0; }
+  .profile-bio { max-width: 34em; justify-self: end; }
+
+  /* ---------- 2. statement ---------- */
+  .statement { display: grid; grid-template-columns: 1fr 1.25fr; gap: 28px; }
+  .statement h2 { font-size: clamp(40px, 6.4vw, 78px); }
+  .statement .quote { font-family: "Pretendard"; font-size: clamp(22px, 2.6vw, 32px); font-weight: 700; line-height: 1.3; letter-spacing: -.02em; margin-top: 28px; }
+  .bio p + p { margin-top: .9em; }
+  .bio { font-family: "Pretendard"; font-size: 14px; color: #222; }
+  .identity-head { margin-top: 56px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 20px; }
+  .identity-head h3 { font-size: 13px; font-weight: 700; letter-spacing: .03em; }
+  .identity-head p { font-family: "Pretendard"; font-size: clamp(16px, 1.8vw, 20px); font-weight: 600; }
+  .identity {
+    margin-top: 14px; padding-top: 14px; border-top: 1.5px solid var(--line);
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
+  }
+  .identity h3 { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+  .identity p { font-family: "Pretendard"; font-size: 12px; color: var(--muted); }
+
+  /* ---------- 3. performances ---------- */
+  .perf { display: grid; grid-template-columns: 1fr 1.15fr .72fr; gap: 14px; min-height: clamp(520px, 56vw, 660px); }
+  .perf-text { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; }
+  .perf-text .lead { font-family: "Pretendard"; font-size: 13px; max-width: 34em; }
+  .perf-list { list-style: none; border-top: 1px solid var(--line); }
+  .perf-list li { padding: 7px 0; border-bottom: 1px solid #b9b8b3; font-family: "Pretendard"; font-size: 12.5px; }
+  .perf-list li.yr-head { font-family: "Archivo"; font-weight: 700; font-size: 14px; padding-top: 16px; border-bottom-color: var(--line); }
+  .perf-list li.yr-head:first-child { padding-top: 8px; }
+  .perf-text h2 { font-size: clamp(30px, 3.8vw, 48px); }
+  .perf-side { display: grid; grid-template-rows: repeat(3, 1fr); gap: 12px; }
+  .venue-card { display: flex; flex-direction: column; }
+  .venue-card .ph { flex: 1; min-height: 110px; }
+  .venue-card .cap { display: flex; justify-content: space-between; align-items: center; margin-top: 5px; }
+  .venue-card .cap::after { content: ""; width: 9px; height: 7px; background: var(--ink); }
+
+  /* ---------- 4. capability / career ---------- */
+  .section-head { font-size: clamp(40px, 7.4vw, 92px); margin-bottom: 18px; }
+  .cv { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1.5px solid var(--line); }
+  .cv + .cv { margin-top: 44px; }
+  .cv-awards { grid-template-columns: 1fr; }
+  .cv-awards dl { grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  .cv > div { padding: 12px 14px 16px 0; }
+  .cv > div + div { border-left: 1px solid #b9b8b3; padding-left: 14px; }
+  .cv h3 { font-size: 12px; font-weight: 700; letter-spacing: .03em; margin-bottom: 10px; text-transform: uppercase; }
+  .cv dl { display: grid; gap: 9px; }
+  .cv dt { font-family: "Pretendard"; font-weight: 700; font-size: 13px; }
+  .cv dd { font-family: "Pretendard"; font-size: 12px; color: var(--muted); }
+  .cv dt.yr { font-family: "Archivo"; }
+  .cv ul { list-style: none; font-family: "Pretendard"; font-size: 12.5px; display: grid; gap: 4px; }
+  .cv ul li::before { content: "— "; color: var(--muted); }
+  .cv .sub { margin-top: 18px; }
+  .cv h3.minor { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+
+  .sub-label { font-size: 12px; font-weight: 700; letter-spacing: .03em; margin: 0 0 10px; }
+
+  /* ---------- 5. international ---------- */
+  .intl { display: grid; grid-template-columns: 1.3fr 1fr; gap: 24px; }
+  .intl h2 { font-size: clamp(36px, 5.2vw, 66px); }
+  .intl .bio { margin-top: 20px; }
+  .intl-photos { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1.4fr 1fr; gap: var(--gap); min-height: 380px; }
+  .intl-photos .ph:first-child { grid-column: span 2; }
+  .activities-label { margin-top: 48px; }
+  .activities { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-top: 14px; border-top: 1.5px solid var(--line); }
+  .activities h3 { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+  .activities p { font-family: "Pretendard"; font-size: 12.5px; color: #333; }
+
+  /* ---------- 6. archive ---------- */
+  .archive h2 { font-size: clamp(40px, 7.4vw, 92px); margin-bottom: 14px; }
+  .archive-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px var(--gap); }
+  .archive-grid .wide { grid-column: span 2; }
+  .tile .ph { aspect-ratio: 1 / 1; }
+  .tile.wide .ph { aspect-ratio: 2 / 1; }
+  .tile { display: flex; flex-direction: column; }
+  .tile .box { flex: 1; display: flex; }
+  .tile .box .ph { flex: 1; }
+  .tile .ovl {
+    position: absolute; top: 8px; left: 9px; right: 9px;
+    font-size: clamp(14px, 1.6vw, 19px); font-weight: 700; line-height: 1; color: #f4f3ef; text-transform: uppercase; text-align: left;
+    letter-spacing: -.01em;
+  }
+  .tile .play {
+    position: absolute; right: 10px; bottom: 10px; width: 22px; height: 22px; border-radius: 3px; background: #f4f3ef;
+    display: grid; place-items: center;
+  }
+  .tile .play::before { content: ""; border-left: 8px solid var(--ink); border-top: 5px solid transparent; border-bottom: 5px solid transparent; margin-left: 2px; }
+  .tile h3 { font-size: 14px; font-weight: 700; margin-top: 8px; text-transform: uppercase; }
+  .tile p { font-family: "Pretendard"; font-size: 11.5px; }
+  .ph.dark { background: #a9a8a3; color: #6f6e6a; }
+
+  .keywords-label { margin-top: 48px; }
+  .keywords { padding-top: 12px; border-top: 1.5px solid var(--line); font-family: "Pretendard"; font-size: clamp(15px, 1.8vw, 20px); font-weight: 600; letter-spacing: -.01em; }
+
+  /* ---------- 7. contact ---------- */
+  .contact-panel { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: end; }
+  .contact-panel h2 { font-size: clamp(56px, 12vw, 150px); }
+  .contact-list { display: grid; gap: 0; border-top: 1.5px solid var(--line); }
+  .contact-list a, .contact-list div {
+    display: grid; grid-template-columns: 110px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid #b9b8b3; font-size: 14px; font-weight: 500;
+  }
+  .contact-list a:hover span:last-child { text-decoration: underline; text-underline-offset: 3px; }
+  .contact-list .yt { display: inline-flex; align-items: center; gap: 8px; }
+  .contact-list .yt svg { width: 22px; height: 22px; flex: none; }
+  .contact-list .k { font-family: "Pretendard"; font-size: 12px; font-weight: 600; color: var(--muted); padding-top: 1px; }
+
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 960px) {
+    .perf { grid-template-columns: 1fr 1fr; }
+    .perf-side { grid-column: span 2; grid-template-rows: none; grid-template-columns: repeat(3, 1fr); }
+    .identity { grid-template-columns: repeat(3, 1fr); }
+    .cv-awards dl { grid-template-columns: repeat(3, 1fr); }
+    .profile-body { grid-template-columns: 1fr; }
+    .profile-bio { justify-self: start; }
+    .contact-panel { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 680px) {
+    :root { --section-gap: 140px; }
+    main { padding-top: 20px; }
+    .profile-photos { grid-template-columns: 1fr 1fr; height: auto; }
+    .profile-photos .ph { aspect-ratio: 3 / 4; }
+    .profile-photos .ph:nth-child(2) { grid-column: span 2; grid-row: 1; aspect-ratio: 16 / 10; }
+    .profile-mid { grid-template-columns: 1fr; gap: 12px; }
+    .profile-mid .contact { grid-column: 1; }
+    .profile-mid .social { justify-self: center; }
+    .profile-mid > :first-child { display: none; }
+    .statement, .intl, .contact-panel { grid-template-columns: 1fr; }
+    .perf { grid-template-columns: 1fr; min-height: 0; }
+    .perf-hero { aspect-ratio: 4 / 5; }
+    .perf-side { grid-column: auto; grid-template-columns: 1fr 1fr 1fr; }
+    .venue-card .ph { min-height: 80px; }
+    .identity { grid-template-columns: 1fr 1fr; }
+    .cv { grid-template-columns: 1fr; }
+    .cv > div + div { border-left: 0; padding-left: 0; border-top: 1px solid #b9b8b3; }
+    .cv-awards dl { grid-template-columns: 1fr; }
+    .archive-grid { grid-template-columns: 1fr 1fr; }
+    .archive-grid .wide { grid-column: span 2; }
+    .activities { grid-template-columns: 1fr; }
+    .intl-photos { min-height: 300px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <h1 class="mega">Jung Seohee</h1>
+  <p class="kr-name">정서희 鄭瑞喜</p>
+  <p class="label kr">전통연희 실연자 · 예술교육가</p>
+</header>
+
+<main>
+
+  <!-- ARTIST PROFILE -->
+  <section class="panel" id="profile">
+    <div class="profile-photos">
+      <div class="ph"><img src="images/hero-portrait.jpg" alt="정서희 프로필 사진" style="object-position: 50% 30%"></div>
+      <div class="ph"><img src="images/hero-performance.jpg" alt="공연 중인 정서희" style="object-position: 50% 40%"></div>
+      <div class="ph"><img src="images/hero-gong.jpg" alt="징을 연주하는 정서희" style="object-position: 64% 40%"></div>
+    </div>
+    <div class="profile-mid">
+      <div></div>
+      <p class="contact">
+        Contact: <span class="as-is">jsh3939@naver.com</span><br>
+        Tel: +82 10 4087 6869<br>
+        Instagram: <span class="as-is">@sogo_sister</span>
+      </p>
+      <div class="social">
+        <a href="https://www.instagram.com/sogo_sister" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.youtube.com/watch?v=8ZC2_gxjYRs&amp;t=6251s" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><rect x="1.5" y="4.5" width="21" height="15" rx="4" fill="currentColor"/><path d="M10 8.8v6.4l5.5-3.2z" fill="var(--paper)"/></svg>
+        </a>
+        <a href="mailto:jsh3939@naver.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5" fill="currentColor"/><path d="M6.5 8.5h11v7h-11z M6.5 8.5l5.5 4 5.5-4" fill="none" stroke="var(--paper)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="profile-body">
+      <div>
+        <h2 class="mega profile-title">Artist<br>Profile</h2>
+      </div>
+      <div class="bio profile-bio">
+        <p>정서희는 한국예술종합학교에서 전통연희를 전공하고, 한양대학교 교육대학원에서 음악교육을 전공한 전통연희 실연자이자 예술교육가이다.</p>
+        <p>전통연희의 현장성과 판의 생명력을 기반으로 오랜 시간 전통 타악과 연희를 수련해 왔으며, 현장에서 축적한 실연 경험과 음악교육학적 방법론을 바탕으로 전통예술의 실연·교육·전승을 함께 실천하고 있다.</p>
+        <p>천안시립예술단 풍물단 연주자를 시작으로 남동구립예술단 훈련장, 연수구립전통예술단 연주자로 활동하며 공공예술단체의 전문 실연과 지도 경험을 쌓아왔다. 또한 일통고법보존회, 호남여성농악보존회, 남사당놀이보존회의 전수자로서 전통 타악과 농악, 전통연희의 원형을 배우고 익히며 전승의 과정에도 꾸준히 참여하고 있다.</p>
+        <p>학생 시절부터 전국 규모의 경연대회에서 대통령상과 장관상을 비롯한 주요 수상 실적을 쌓았으며, 이후 전문 연희자로서 국립국악원 예악당, 국립극장, 국립민속국악원, 국립부산국악원 등 국내 주요 무대와 홍콩·미국 등 해외 무대에서 활동해 왔다.</p>
+        <p>정서희는 전통을 단순히 재현하는 데 머무르지 않는다. 전통연희가 가진 장단과 호흡, 신체 언어, 현장성과 공동체적 에너지를 오늘의 무대와 관객에게 어떻게 전달하고 확장할 수 있는지를 지속적으로 탐구하며, 전통을 살아 있는 예술로 이어가는 연희자의 역할을 고민하고 있다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTIST STATEMENT + ARTISTIC IDENTITY -->
+  <section class="panel" id="statement">
+    <div class="statement">
+      <div>
+        <h2 class="mega">Artist<br>Statement</h2>
+        <p class="quote">몸으로 익힌 전통,<br>오늘의 판으로 이어가다</p>
+      </div>
+      <div class="bio">
+        <p>정서희에게 전통연희는 악보나 기록만으로 완성되는 예술이 아니다.</p>
+        <p>사람과 사람이 함께 호흡하고, 몸과 소리가 만나며, 그 순간의 에너지와 관계 속에서 비로소 완성되는 살아 있는 예술이다.</p>
+        <p>전통연희를 배우는 과정에서 장단의 구조와 소리의 원리를 익히는 것뿐만 아니라, 몸의 움직임과 호흡, 공간을 사용하는 방식, 연희자와 관객 사이에서 형성되는 관계까지 경험해 왔다.</p>
+        <p>특히 사물놀이와 농악, 판굿, 설장구, 소고춤 등 다양한 전통연희의 실연 경험을 통해 전통예술의 본질은 정해진 형식을 반복하는 데 있는 것이 아니라, 전통의 구조와 정신을 바탕으로 매 순간 새롭게 살아 움직이는 데 있음을 배워왔다.</p>
+        <p>한편 음악교육을 전공하며 전통 장단과 연희를 보다 체계적으로 바라보고, 이를 학습자의 수준과 목적에 맞게 전달하는 방법을 함께 연구해 왔다.</p>
+        <p>이러한 경험은 정서희의 예술 활동을 실연에만 머무르지 않게 한다.</p>
+        <p>전통을 깊이 있게 배우고, 몸으로 익히고, 무대에서 실천하며, 다시 다음 세대에 전달하는 것.</p>
+        <p>정서희는 그 과정 속에서 전통연희의 본질을 지키면서도 오늘의 관객과 소통할 수 있는 새로운 표현과 가능성을 꾸준히 탐구하고 있다.</p>
+        <p>전통을 깊이 있게 배우고, 몸으로 익히고, 무대에서 실천하며, 다시 다음 세대에 전달하는 것.</p>
+        <p>정서희의 예술 활동은 이러한 순환 속에서 이어지고 있다.</p>
+      </div>
+    </div>
+    <div class="identity-head">
+      <h3>ARTISTIC IDENTITY</h3>
+      <p>전통을 깊이 있게 수련하고, 동시대의 무대로 확장하는 연희 예술가</p>
+    </div>
+    <div class="identity">
+      <div><h3>TRADITION</h3><p>전통의 원형과 장단의 구조를 배우고 익히며 전통연희의 본질과 가치를 이어간다.</p></div>
+      <div><h3>PERFORMANCE</h3><p>판굿과 사물놀이, 설장구, 농악, 소고춤 등을 중심으로 전통연희 특유의 역동적인 움직임과 소리, 호흡과 에너지를 무대 위에서 구현한다.</p></div>
+      <div><h3>EDUCATION</h3><p>현장에서 축적한 실연 경험과 음악교육학적 지식을 바탕으로 전통예술의 구조와 원리를 체계적으로 전달하고, 학습자의 수준과 목적에 맞는 교육 방법을 고민한다.</p></div>
+      <div><h3>TRANSMISSION</h3><p>일통고법보존회, 호남여성농악보존회, 남사당놀이보존회의 전수 과정에 참여하며 전통연희의 원형을 직접 배우고 익히고, 전승의 과정 속에서 전통의 가치를 지속적으로 탐구한다.</p></div>
+      <div><h3>EXPANSION</h3><p>국내외 다양한 예술가 및 예술기관과의 협업과 공연 경험을 바탕으로 전통연희가 새로운 공간과 장르, 새로운 관객과 만날 수 있는 가능성을 탐구한다.</p></div>
+    </div>
+  </section>
+
+  <!-- ARTISTIC CAPABILITY · EDUCATION & QUALIFICATION · PROFESSIONAL CAREER · AWARDS -->
+  <section class="panel" id="capability">
+    <h2 class="mega section-head">Artistic Capability</h2>
+
+    <div class="cv">
+      <div>
+        <h3 class="kr">주요 실연 분야</h3>
+        <dl>
+          <div><dt>판굿</dt><dd>채상 · 부포</dd></div>
+          <div><dt>사물놀이</dt><dd>삼도사물놀이</dd></div>
+          <div><dt>장구</dt><dd>삼도설장구</dd></div>
+          <div><dt>농악</dt><dd>웃다리풍물 · 호남여성농악</dd></div>
+          <div><dt>춤·연희</dt><dd>소고춤</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h3 class="kr">전문 역량</h3>
+        <ul>
+          <li>전통연희 및 전통 타악 실연</li>
+          <li>전통 장단 및 연희 구조 분석</li>
+          <li>판굿·사물놀이·농악 등 전통연희 실기</li>
+          <li>전통연희 실기 지도</li>
+          <li>단계별 예술교육 설계</li>
+          <li>국내외 협업 및 초청공연</li>
+          <li>전통과 현대 음악의 융합 무대</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv">
+      <div>
+        <h3>Education &amp; Qualification</h3>
+        <h3 class="minor">Education</h3>
+        <dl>
+          <div><dt>한국예술종합학교</dt><dd>전통연희 전공 학사 졸업</dd></div>
+          <div><dt>한양대학교 교육대학원</dt><dd>음악교육 전공 석사 이수</dd></div>
+        </dl>
+        <h3 class="minor sub">Qualification</h3>
+        <dl>
+          <div><dt>문화예술교육사 2급</dt><dd>문화체육관광부</dd></div>
+          <div><dt>중등학교 정교사 2급 음악</dt><dd>교육부 · 한양대학교</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h3>Professional Career</h3>
+        <dl>
+          <div><dt>연수구립전통예술단</dt><dd>연주자 | 2026–현재</dd></div>
+          <div><dt>남동구립예술단</dt><dd>훈련장 | 2023–현재</dd></div>
+          <div><dt>호남여성농악보존회</dt><dd>전수자 | 2023–현재</dd></div>
+          <div><dt>남사당놀이보존회</dt><dd>전수자 | 2025–현재</dd></div>
+          <div><dt>일통고법보존회</dt><dd>전수자 | 2012–현재</dd></div>
+          <div><dt>천안시립예술단 풍물단</dt><dd>연주자 | 2011–2012</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="cv cv-awards">
+      <div>
+        <h3>Awards</h3>
+        <dl>
+          <div><dt class="yr">2026</dt><dd>제16회 농화전국국악경연대회 일반부 대상</dd></div>
+          <div><dt class="yr">2022</dt><dd>문화체육관광부 장관상 수상</dd></div>
+          <div><dt class="yr">2016</dt><dd>강릉단오제 사물놀이 경연대회 전문인부 은상</dd></div>
+          <div><dt class="yr">2014</dt><dd>전주대사습놀이 전국대회 농악부문 장원</dd></div>
+          <div><dt class="yr">2010</dt><dd>제17회 전국 청소년 민속예술제 대통령상</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- REPRESENTATIVE PERFORMANCES -->
+  <section class="panel" id="performances">
+    <div class="perf">
+      <div class="ph perf-hero">Photo</div>
+      <div class="perf-text">
+        <ul class="perf-list">
+          <li class="yr-head">2025</li>
+          <li>〈농악 삼.셋.판〉 | 구리아트홀 코스모스대극장</li>
+          <li>국립민속국악원 연희부 정기공연 〈유랑의 꽃〉 | 국립민속국악원</li>
+          <li class="yr-head">2024</li>
+          <li>〈도리 창단 10주년 기념 사물놀이 완판〉 단독공연 | 국립국악원 예악당</li>
+          <li class="yr-head">2023</li>
+          <li>홍콩 차이니즈 오케스트라 × 도리 협주곡 마당 | 홍콩</li>
+          <li>미국 휴스턴 아시아 소사이어티 초청 공연 | 미국 휴스턴</li>
+          <li>여우락 페스티벌 〈여우락 홈커밍〉 | 국립극장</li>
+          <li>〈추갱지르당〉 | 국립극장 하늘극장</li>
+          <li>대한민국 전통문화대축제 여성연희 올스타전 | 대한민국 전통문화대축제</li>
+          <li>국립부산국악원 연희부 정기공연 〈왔구나 연희야〉 | 국립부산국악원</li>
+        </ul>
+        <h2 class="mega">Representative<br>Performances</h2>
+      </div>
+      <div class="perf-side">
+        <div class="venue-card"><div class="ph">Photo</div><p class="cap label kr">국립국악원 예악당</p></div>
+        <div class="venue-card"><div class="ph">Photo</div><p class="cap label kr">국립극장</p></div>
+        <div class="venue-card"><div class="ph">Photo</div><p class="cap label kr">홍콩</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERNATIONAL & COLLABORATIVE PERFORMANCE · ARTISTIC ACTIVITIES · ARTIST KEYWORDS -->
+  <section class="panel" id="international">
+    <div class="intl">
+      <div>
+        <h2 class="mega">International &amp;<br>Collaborative<br>Performance</h2>
+        <div class="bio">
+          <p>정서희는 전통연희를 기반으로 다양한 예술가 및 예술기관과의 협업을 이어오며 전통예술의 표현 영역을 확장해 왔다.</p>
+          <p>홍콩 차이니즈 오케스트라와의 협연을 비롯하여 미국 휴스턴 아시아 소사이어티 초청 공연 등 해외 무대에서 전통연희의 역동적인 소리와 움직임을 선보였다.</p>
+          <p>또한 국립극장 여우락 페스티벌을 비롯하여 국립국악원, 국립민속국악원, 국립부산국악원 등 다양한 공연 환경에서 활동하며 전통연희가 서로 다른 공간과 장르, 관객과 만나는 가능성을 경험해 왔다.</p>
+          <p>정서희는 전통예술이 특정한 형식과 공간에 머무르지 않고 새로운 예술적 관계를 만들어낼 수 있도록, 다양한 협업과 무대 환경에 유연하게 대응하는 연희자로서 활동하고 있다.</p>
+        </div>
+      </div>
+      <div class="intl-photos">
+        <div class="ph">Photo</div>
+        <div class="ph">Photo</div>
+        <div class="ph">Photo</div>
+      </div>
+    </div>
+
+    <h3 class="sub-label activities-label">ARTISTIC ACTIVITIES</h3>
+    <div class="activities">
+      <div><h3>PERFORMANCE · 실연</h3><p>전통연희와 타악을 중심으로 판굿, 삼도사물놀이, 삼도설장구, 웃다리풍물, 호남여성농악, 소고춤 등 다양한 레퍼토리를 실연하며 국내외 공연장에서 활동하고 있다.</p></div>
+      <div><h3>EDUCATION · 예술교육</h3><p>문화예술교육사 2급과 중등학교 정교사 2급 음악 자격을 바탕으로 전통 장단과 연희의 구조를 체계적으로 분석하고, 학습자의 수준과 목적에 따른 단계별 예술교육을 설계하고 있다.</p></div>
+      <div><h3>TRANSMISSION · 전승</h3><p>일통고법보존회, 호남여성농악보존회, 남사당놀이보존회 전수자로서 전통 타악과 농악, 전통연희의 원형을 배우고 익히며 전통예술의 지속적인 전승과 발전에 참여하고 있다.</p></div>
+    </div>
+
+    <h3 class="sub-label keywords-label">ARTIST KEYWORDS</h3>
+    <p class="keywords">전통연희 · 사물놀이 · 농악 · 타악 · 장단 · 판굿 · 소고춤 · 예술교육 · 전승 · 동시대적 확장</p>
+  </section>
+
+  <!-- ARCHIVE -->
+  <section class="panel archive" id="archive">
+    <h2 class="mega">Archive</h2>
+    <div class="archive-grid">
+      <div class="tile"><div class="box"><div class="ph dark">Photo</div></div><h3>Performance</h3><p>국내외 주요 공연 및 무대 활동</p></div>
+      <div class="tile"><div class="box"><div class="ph">Photo</div></div><h3>Education</h3><p>전통연희 및 타악 교육 활동</p></div>
+      <div class="tile"><div class="box"><div class="ph dark">Photo</div></div><h3>Tradition</h3><p>보존회 전수 및 전통예술 활동</p></div>
+      <div class="tile"><div class="box"><div class="ph">Photo</div></div><h3>Awards</h3><p>주요 경연대회 및 수상 기록</p></div>
+      <div class="tile wide"><div class="box"><div class="ph">Photo</div></div><h3>International</h3><p>해외 초청 및 협업 공연</p></div>
+      <div class="tile wide"><div class="box"><a class="ph dark" href="https://www.youtube.com/watch?v=8ZC2_gxjYRs&amp;t=6251s" target="_blank" rel="noopener">Video<span class="play"></span></a></div><h3>Media</h3><p>방송 및 영상 기록</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="panel" id="contact">
+    <div class="contact-panel">
+      <div>
+        <h2 class="mega">Contact</h2>
+      </div>
+      <div class="contact-list">
+        <a href="tel:01040876869"><span class="k">연락처</span><span>010 4087 6869</span></a>
+        <a href="mailto:jsh3939@naver.com"><span class="k">이메일</span><span>jsh3939@naver.com</span></a>
+        <a href="https://www.instagram.com/sogo_sister" target="_blank" rel="noopener"><span class="k">SNS</span><span class="yt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>@sogo_sister</span></a>
+        <a href="https://www.youtube.com/watch?v=8ZC2_gxjYRs&amp;t=6251s" target="_blank" rel="noopener"><span class="k">공연 영상</span><span class="yt"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="4.5" width="21" height="15" rx="4" fill="currentColor"/><path d="M10 8.8v6.4l5.5-3.2z" fill="var(--paper)"/></svg>YouTube</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
